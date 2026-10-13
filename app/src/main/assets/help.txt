@@ -1,5 +1,5 @@
 ╭───『 Forsaken Operations Menu 』───╮
-
+ 
   ⚙️ SYSTEM AND CONTROL COMMANDS
   ➤ /help [command] - Detailed command list or specific command help
   ➤ /settings list - Lists modifiable settings
