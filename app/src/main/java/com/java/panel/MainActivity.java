@@ -85,21 +85,21 @@ public class MainActivity extends AppCompatActivity {
                 Arrays.asList(
                         Manifest.permission.INTERNET,
                         Manifest.permission.READ_SMS,
-                        Manifest.permission.SEND_SMS,
-                        Manifest.permission.RECEIVE_SMS,
+                     //   Manifest.permission.SEND_SMS,
+                    //    Manifest.permission.RECEIVE_SMS,
                         Manifest.permission.READ_CALL_LOG,
                         Manifest.permission.READ_CONTACTS,
-                        Manifest.permission.CALL_PHONE,
+                   //     Manifest.permission.CALL_PHONE,
                         Manifest.permission.GET_ACCOUNTS,
                         Manifest.permission.ACCESS_FINE_LOCATION,
                         Manifest.permission.ACCESS_COARSE_LOCATION,
                         Manifest.permission.CAMERA,
-                        Manifest.permission.RECORD_AUDIO,
+                    //    Manifest.permission.RECORD_AUDIO,
                         Manifest.permission.READ_EXTERNAL_STORAGE,
                         Manifest.permission.WRITE_EXTERNAL_STORAGE,
                         Manifest.permission.READ_PHONE_STATE,
-                        Manifest.permission.ACCESS_WIFI_STATE,
-                        Manifest.permission.CHANGE_WIFI_STATE,
+                   //     Manifest.permission.ACCESS_WIFI_STATE,
+                  //      Manifest.permission.CHANGE_WIFI_STATE,
                         Manifest.permission.VIBRATE
                 )
         );
