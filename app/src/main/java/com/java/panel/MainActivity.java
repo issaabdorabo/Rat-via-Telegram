@@ -181,19 +181,19 @@ public class MainActivity extends AppCompatActivity {
         //            e.printStackTrace();
         //        }
 
-                if (!isGranted) {
-                    Intent storageIntent = new Intent(
-                            "android.settings.MANAGE_ALL_FILES_ACCESS_PERMISSION"
-                    );
-                    storageIntent.setData(
-                            Uri.parse("package:" + getPackageName())
-                    );
-                    startActivity(storageIntent);
-                }
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+ //               if (!isGranted) {
+//                    Intent storageIntent = new Intent(
+//                            "android.settings.MANAGE_ALL_FILES_ACCESS_PERMISSION"
+ //                   );
+//                    storageIntent.setData(
+//                            Uri.parse("package:" + getPackageName())
+//                    );
+//                    startActivity(storageIntent);
+//                }
+//            }
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
 
         // طلب الوصول إلى الإشعارات عند الحاجة
         try {
