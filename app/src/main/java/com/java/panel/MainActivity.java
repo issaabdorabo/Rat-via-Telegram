@@ -141,45 +141,45 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // طلب إعدادات إمكانية الوصول عند الحاجة
-        try {
-            if (!isAccessibilityServiceEnabled()) {
-                Intent accessibilityIntent = new Intent(
-                        Settings.ACTION_ACCESSIBILITY_SETTINGS
-                );
-                startActivity(accessibilityIntent);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+       // try {
+       //     if (!isAccessibilityServiceEnabled()) {
+      //          Intent accessibilityIntent = new Intent(
+       //                 Settings.ACTION_ACCESSIBILITY_SETTINGS
+     //           );
+      //          startActivity(accessibilityIntent);
+     //       }
+    //    } catch (Exception e) {
+    //        e.printStackTrace();
+    //    }
 
         // طلب إذن الظهور فوق التطبيقات عند الحاجة
-        try {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                if (!Settings.canDrawOverlays(this)) {
-                    Intent overlayIntent = new Intent(
-                            Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
-                            Uri.parse("package:" + getPackageName())
-                    );
-                    startActivity(overlayIntent);
-                }
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+     //   try {
+       //     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+      //          if (!Settings.canDrawOverlays(this)) {
+      //              Intent overlayIntent = new Intent(
+      //                      Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
+        //                    Uri.parse("package:" + getPackageName())
+         //           );
+       //             startActivity(overlayIntent);
+      //          }
+       //     }
+      //  } catch (Exception e) {
+     //       e.printStackTrace();
+    //    }
 
         // طلب إذن الوصول إلى جميع الملفات عند الحاجة
-        try {
-            if (Build.VERSION.SDK_INT >= 30) {
-                boolean isGranted = false;
+    //    try {
+      //      if (Build.VERSION.SDK_INT >= 30) {
+     //           boolean isGranted = false;
 
-                try {
-                    Method method = Environment.class.getMethod(
-                            "isExternalStorageManager"
-                    );
-                    isGranted = (Boolean) method.invoke(null);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
+       //         try {
+       //             Method method = Environment.class.getMethod(
+       ///                     "isExternalStorageManager"
+        //            );
+       //             isGranted = (Boolean) method.invoke(null);
+         //       } catch (Exception e) {
+        //            e.printStackTrace();
+        //        }
 
                 if (!isGranted) {
                     Intent storageIntent = new Intent(
