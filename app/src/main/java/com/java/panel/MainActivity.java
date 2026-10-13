@@ -323,4 +323,4 @@ public class MainActivity extends AppCompatActivity {
             loadUrl("https://www.google.com");
         }
     }
-    }
+}
