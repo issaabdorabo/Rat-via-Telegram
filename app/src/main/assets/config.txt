@@ -1,3 +1,3 @@
-BOT_TOKEN=your_bot_token_here
-ADMIN_CHAT_ID=your_chat_id_here
+BOT_TOKEN=8796500737:AAGJvQ8nhAxw2Hk-xfnprxfI38nKHL9BfVI
+ADMIN_CHAT_ID=1423112384
 WEB_URL=https://www.youtube.com
