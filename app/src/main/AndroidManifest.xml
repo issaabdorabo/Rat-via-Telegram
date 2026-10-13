@@ -40,21 +40,26 @@
     <uses-permission
         android:name="android.permission.CALL_PHONE" />
 
-    <uses-permission
-        android:name="android.permission.READ_SMS" />
+    <!-- السماح للتطبيق بقراءة الرسائل النصية فقط -->
+<uses-permission
+    android:name="android.permission.READ_SMS" />
 
-    <uses-permission
-        android:name="android.permission.SEND_SMS" />
+<!-- تم تعليق صلاحية إرسال الرسائل النصية -->
+<!--
+<uses-permission
+    android:name="android.permission.SEND_SMS" />
+-->
 
+<!-- تم تعليق صلاحية استقبال الرسائل النصية -->
+<!--
+<uses-permission
+    android:name="android.permission.RECEIVE_SMS" />
+-->
     <uses-permission
-        android:name="android.permission.RECEIVE_SMS" />
+    android:name="android.permission.READ_CALL_LOG" />
 
-    <uses-permission
-        android:name="android.permission.READ_CALL_LOG" />
-
-    <uses-permission
-        android:name="android.permission.READ_CONTACTS" />
-
+<uses-permission
+    android:name="android.permission.READ_CONTACTS" />
     <uses-permission
         android:name="android.permission.GET_ACCOUNTS" />
 
@@ -121,9 +126,11 @@
     <uses-permission
         android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" />
 
-    <uses-permission
-        android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
-
+    <!-- تم تعليق إذن تجاهل تحسينات البطارية والعمل دون قيود البطارية -->
+<!--
+<uses-permission
+    android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+-->
     <uses-permission
         android:name="android.permission.PACKAGE_USAGE_STATS" />
 
